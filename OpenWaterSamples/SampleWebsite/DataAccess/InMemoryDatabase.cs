@@ -33,6 +33,14 @@ namespace SampleWebsite.DataAccess
             }
         }
 
+        public static User GetUserById(int id)
+        {
+            lock (((ICollection)Users).SyncRoot)
+            {
+                return Users.FirstOrDefault(u => u.Id == id);
+            }
+        }
+
 
     }
 }

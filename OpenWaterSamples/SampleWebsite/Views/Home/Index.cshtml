@@ -1,7 +1,33 @@
-﻿
+﻿@model SampleWebsite.DataAccess.User
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+
+<div class="app flex-row align-items-center  pace-done">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card-group">
+                    <div class="card p-4" id="LoginArea">
+                        <div class="card-body">
+                            Welcome, <strong>@Model.FullName</strong>
+                            <div class="alert alert-warning">
+                                You are currently logged in click <a href="/logout">here</a> to logout.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card text-white bg-primary py-5 d-md-down-none" style="        width: 44%">
+                        <div class="card-body text-center">
+                            <div>
+                                <h2>SSO Testing</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 

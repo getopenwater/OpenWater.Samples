@@ -10,9 +10,16 @@ namespace SampleWebsite.Controllers
     public class HomeController : Controller
     {
         private const string ERROR_MESSAGE_KEY = "ErrorMessage";
+        private const string USER_COOKIE_KEY = "_User";
         public ActionResult Index()
         {
-            return View();
+            var user = GetLoggedInUser();
+            if (user != null)
+            {
+                return View(user);
+            }
+
+            return RedirectToAction("login");
         }
 
         [Route("login")]
@@ -37,6 +44,7 @@ namespace SampleWebsite.Controllers
             }
             else
             {
+                SignInUser(user);
                 if (string.IsNullOrEmpty(callback))
                 {
                     return RedirectToAction("index");
@@ -48,5 +56,49 @@ namespace SampleWebsite.Controllers
             }
             return RedirectToAction("index");
         }
+
+
+        [Route("GetUserInfo")]
+        public ActionResult GetUserInfo()
+        {
+            var token = Request.Headers["Authorization"];
+            if (token == null)
+            {
+                return Json(new { Message = "Please provide authenticaiton token" }, JsonRequestBehavior.AllowGet);
+            }
+            UserTokensService tokensService = new UserTokensService();
+            var user = tokensService.GetUserByToken(token);
+            if (user == null)
+            {
+                return Json(new { Message = "Invalid Token" }, JsonRequestBehavior.AllowGet);
+            }
+            return Json(user, JsonRequestBehavior.AllowGet);
+        }
+
+
+        private void SignInUser(User user)
+        {
+            HttpCookie cookie = new HttpCookie(USER_COOKIE_KEY, user.Id.ToString());
+            Response.Cookies.Add(cookie);
+        }
+
+        private User GetLoggedInUser()
+        {
+            if (Request.Cookies[USER_COOKIE_KEY] == null)
+            {
+                return null;
+            }
+
+            var userId = Request.Cookies[USER_COOKIE_KEY].Value;
+            return InMemoryDatabase.GetUserById(int.Parse(userId));
+        }
+
+        [Route("logout")]
+        public ActionResult Logout()
+        {
+            Response.Cookies[USER_COOKIE_KEY].Expires = DateTime.Now.AddDays(-1);
+            return RedirectToAction("login");
+        }
+
     }
 }

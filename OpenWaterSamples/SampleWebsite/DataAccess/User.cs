@@ -7,12 +7,19 @@ namespace SampleWebsite.DataAccess
 {
     public class User
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
         public string Password { get; set; }
 
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
 
         public static User CreateDemoUser()
         {
@@ -22,7 +29,7 @@ namespace SampleWebsite.DataAccess
                 Password = "demo",
                 FirstName = "Demo",
                 LastName = "User",
-                Id = Guid.NewGuid().ToString()
+                Id = 1
             };
         }
     }
