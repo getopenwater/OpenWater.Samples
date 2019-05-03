@@ -71,8 +71,18 @@ namespace SampleWebsite.Controllers
         {
             UserTokensService tokensService = new UserTokensService();
             var token = tokensService.AddNewUserToken(user);
-            var redirectUrl = $"{callback}?token={token}";
-            return redirectUrl;
+
+            if(callback.Contains("?"))
+            {
+                var redirectUrl = $"{callback}&token={token}";
+                return redirectUrl;
+            }
+            else
+            {
+                var redirectUrl = $"{callback}?token={token}";
+                return redirectUrl;
+            }
+            
         }
 
         [Route("GetUserInfo")]
