@@ -25,6 +25,19 @@ namespace SampleWebsite.Controllers
         [Route("login")]
         public ActionResult Login(string callback)
         {
+            var user = GetLoggedInUser();
+            if (user != null)
+            {
+                if (!string.IsNullOrEmpty(callback))
+                {
+                    var redirectUrl = GenerateTokenAdnGetRedirectUrl(callback, user);
+                    return Redirect(redirectUrl);
+                }
+                else
+                {
+                    return RedirectToAction("index");
+                }
+            }
             if (TempData[ERROR_MESSAGE_KEY] != null)
             {
                 ViewData[ERROR_MESSAGE_KEY] = TempData[ERROR_MESSAGE_KEY];
@@ -49,14 +62,18 @@ namespace SampleWebsite.Controllers
                 {
                     return RedirectToAction("index");
                 }
-                UserTokensService tokensService = new UserTokensService();
-                var token = tokensService.AddNewUserToken(user);
-                var redirectUrl = $"{callback}?token={token}";
-                Response.Redirect(redirectUrl);
+                var redirectUrl = GenerateTokenAdnGetRedirectUrl(callback, user);
+                return Redirect(redirectUrl);
             }
-            return RedirectToAction("index");
         }
 
+        private string GenerateTokenAdnGetRedirectUrl(string callback, User user)
+        {
+            UserTokensService tokensService = new UserTokensService();
+            var token = tokensService.AddNewUserToken(user);
+            var redirectUrl = $"{callback}?token={token}";
+            return redirectUrl;
+        }
 
         [Route("GetUserInfo")]
         public ActionResult GetUserInfo()
@@ -74,7 +91,6 @@ namespace SampleWebsite.Controllers
             }
             return Json(user, JsonRequestBehavior.AllowGet);
         }
-
 
         private void SignInUser(User user)
         {
