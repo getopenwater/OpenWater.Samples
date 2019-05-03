@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleWebsite.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,9 @@ namespace SampleWebsite
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            InMemoryDatabase.SeedData();
         }
+
+       
     }
 }

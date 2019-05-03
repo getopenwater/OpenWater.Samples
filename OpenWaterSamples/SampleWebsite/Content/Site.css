@@ -1,0 +1,84 @@
+﻿.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+
+.card-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    flex-flow: row wrap;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+    flex: 1 0 0%;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #c8ced3;
+    border-radius: .25rem;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+
+.card.bg-primary {
+    border-color: #187da0;
+    background-color: #20a8d8 !important;
+}
+
+
+.app, app-dashboard, app-root {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.flex-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pt-5, .py-5 {
+    padding-top: 3rem !important;
+}
+
+.card-body, .card-block {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2.5rem;
+}
