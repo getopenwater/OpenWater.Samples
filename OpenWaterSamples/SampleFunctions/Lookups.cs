@@ -17,12 +17,12 @@ namespace SampleFunctions
         [FunctionName("Lookup")]
         public static async Task<HttpResponseMessage> Lookup([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "lookup")]HttpRequestMessage req, TraceWriter log)
         {
-            var search = req.GetQueryNameValuePairs().Where(c => c.Key.ToLower() == "search").Select(c => c.Value).FirstOrDefault();
-            if (search == null)
-                throw new Exception("Search parameter is required");
+            var query = req.GetQueryNameValuePairs().Where(c => c.Key.ToLower() == "query").Select(c => c.Value).FirstOrDefault();
+            if (query == null)
+                throw new Exception("query parameter is required");
 
             var fakeDb = FakeDatabase();
-            var result = fakeDb.Where(c => c.FullName.ToLower().Contains(search.ToLower())).ToArray();
+            var result = fakeDb.Where(c => c.FullName.ToLower().Contains(query.ToLower())).ToArray();
             var response = req.Json(result, prettyPrint: true);
             response.EnableCors();
             return response;
