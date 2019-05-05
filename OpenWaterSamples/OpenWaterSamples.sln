@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleFunctions", "SampleFunctions\SampleFunctions.csproj", "{8753CA53-7A73-47D1-89B4-D2CC10E2A6F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleFunctions", "SampleFunctions\SampleFunctions.csproj", "{8753CA53-7A73-47D1-89B4-D2CC10E2A6F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebsite", "SampleWebsite\SampleWebsite.csproj", "{FB5414C1-77A7-44BF-8320-7FAA763F5A2B}"
 EndProject
