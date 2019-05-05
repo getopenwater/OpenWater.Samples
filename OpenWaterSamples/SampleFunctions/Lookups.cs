@@ -22,7 +22,7 @@ namespace SampleFunctions
                 throw new Exception("Search parameter is required");
 
             var fakeDb = FakeDatabase();
-            var result = fakeDb.Where(c => c.Color.ToLower().Contains(search.ToLower())).ToArray();
+            var result = fakeDb.Where(c => c.FullName.ToLower().Contains(search.ToLower())).ToArray();
             var response = req.Json(result, prettyPrint: true);
             response.EnableCors();
             return response;
@@ -32,23 +32,24 @@ namespace SampleFunctions
         {
             var db = new List<LookupTestItem>();
 
-            db.Add(new LookupTestItem { Color = "Blue", HexValue = "" });
-            db.Add(new LookupTestItem { Color = "Orange", HexValue = "" });
-            db.Add(new LookupTestItem { Color = "Green", HexValue = "" });
-            db.Add(new LookupTestItem { Color = "Red", HexValue = "" });
-            db.Add(new LookupTestItem { Color = "Cyan", HexValue = "" });
-            db.Add(new LookupTestItem { Color = "Magenta", HexValue = "" });
-            db.Add(new LookupTestItem { Color = "Purple", HexValue = "" });
-            db.Add(new LookupTestItem { Color = "Pink", HexValue = "" });
-            db.Add(new LookupTestItem { Color = "Yellow", HexValue = "" });
+            db.Add(new LookupTestItem { FirstName = "John", LastName = "Doe", University = "Florida State University"});
+            db.Add(new LookupTestItem { FirstName = "Jane", LastName = "Doe", University = "Ohio State University" });
+            db.Add(new LookupTestItem { FirstName = "Bill", LastName = "Gates", University = "Harvard" });
+            db.Add(new LookupTestItem { FirstName = "Mark", LastName = "Zuckerberg", University = "Harvard" });
+            db.Add(new LookupTestItem { FirstName = "Larry", LastName = "Ellison", University = "University of California, Berkeley" });
+            db.Add(new LookupTestItem { FirstName = "Michelle", LastName = "Obama", University = "Princeton" });
+            db.Add(new LookupTestItem { FirstName = "Oprah", LastName = "Winfrey", University = "None" });
 
             return db;
         }
 
         public class LookupTestItem
         {
-            public string Color { get; set; }
-            public string HexValue { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string University { get; set; }
+
+            public string FullName => FirstName + " " + LastName;
         }
     }
 }
