@@ -1,0 +1,16 @@
+{
+  "eventId": "a25f5a39-035d-4de2-bd58-f3af8f19bfca",
+  "eventType": "ChairAddedToSession",
+  "eventDate": "2021-12-01T06:35:02.1066067Z",
+  "data": {
+    "id": 38001,
+    "programId": 28005,
+    "sessionId": 37002,
+    "chairUser": {
+      "id": 16005,
+      "email": "judge1@nonprofitcms.org",
+      "thirdPartyCorporateId": null,
+      "externalAccountData": null
+    }
+  }
+}

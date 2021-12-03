@@ -1,0 +1,11 @@
+{
+  "eventId": "9e526721-e654-4bc0-a48d-52e319acec6a",
+  "eventType": "ItemRemovedFromSession",
+  "eventDate": "2021-12-01T06:32:32.3598471Z",
+  "data": {
+    "id": 36001,
+    "programId": 28005,
+    "sessionId": 37002,
+    "sessionItemTypeId": null
+  }
+}

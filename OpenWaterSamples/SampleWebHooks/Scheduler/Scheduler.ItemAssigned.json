@@ -1,0 +1,15 @@
+{
+    "eventId": "983355c8-547a-4ba9-835d-bf0fa0b791c3",
+    "eventType": "ItemAssignedToScheduler",
+    "eventDate": "2021-12-01T06:56:41.9911379Z",
+    "data": {
+      "id": 85001,
+      "programId": 28002,
+      "targetId": 3015,
+      "targetName": "Application 3015",
+      "targetType": "Application",
+      "scheduleRoomId": 66001,
+      "scheduleDayId": 64002,
+      "scheduleTimeSlotId": 65002
+    }
+  }

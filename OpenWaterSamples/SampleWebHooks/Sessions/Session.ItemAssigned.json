@@ -1,0 +1,11 @@
+{
+  "eventId": "f58f6754-b6f9-4633-be97-9afd04196957",
+  "eventType": "ItemAssignedToSession",
+  "eventDate": "2021-12-01T06:31:11.8499881Z",
+  "data": {
+    "id": 36001,
+    "programId": 28005,
+    "sessionId": 37002,
+    "sessionItemTypeId": null
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "eventId": "45322990-735c-4324-b982-3558d4c09900",
+  "eventType": "SubmissionFinalized",
+  "eventDate": "2021-12-01T06:12:10.215731Z",
+  "data": {
+    "roundId": 54004,
+    "id": 3026,
+    "programId": 28002,
+    "userId": 16002,
+    "email": "submitter1@nonprofitcms.org",
+    "thirdPartyUniqueId": null,
+    "externalAccountData": null,
+    "sessionId": null,
+    "name": "Title",
+    "code": "3026",
+    "categoryCode": "cat1_1_1",
+    "categoryName": "cat1_1_1",
+    "categoryPath": "4015_4016_4018",
+    "downloadPdfAsApplicantUrl": "https://www.example.com",
+    "downloadPdfAsJudgeUrl": "https://www.example.com",
+    "scheduler": null,
+    "collaborators": [],
+    "roundSubmissions": [
+      {
+        "roundId": 54004,
+        "roundName": "First Round",
+        "startedAtUtc": "2021-12-01T05:48:27.6477986",
+        "updatedAtUtc": "2021-12-01T06:12:09.2007302",
+        "finalizedAtUtc": "2021-12-01T06:12:09.19973",
+        "status": "Complete",
+        "allowUserToMakeEdits": false,
+        "invoiceId": 9010,
+        "isPaid": true,
+        "isWinner": true,
+        "isForwarded": false,
+        "winnerNotes": null,
+        "adminUrlToSubmission": "https://www.example.com",
+        "publicUrlToSubmission": "https://www.example.com",
+        "publicGalleryUrl": "https://www.example.com",
+        "winnerTypes": [
+          "Gold"
+        ],
+        "submissionFieldValues": [
+          {
+            "firstValue": "Title",
+            "secondValue": null,
+            "alias": "title",
+            "typeName": "ApplicationNameFieldValue"
+          },
+          {
+            "selectedPath": [
+              4015,
+              4016,
+              4018
+            ],
+            "alias": "category",
+            "typeName": "ApplicationCategoryFieldValue"
+          },
+          {
+            "value": "Narrative",
+            "alias": "narrative",
+            "typeName": "TextFieldValue"
+          }
+        ],
+        "judgeScorecardInfos": [],
+        "numberOfTimesJudged": 0,
+        "numberOfAssignedJudges": 0,
+        "averageScore": null
+      }
+    ]
+  }
+}

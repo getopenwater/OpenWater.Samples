@@ -1,0 +1,11 @@
+{
+  "eventId": "5b6ab984-fb72-4e42-a852-f5dda3fc991a",
+  "eventType": "ItemRemovedFromScheduler",
+  "eventDate": "2021-12-01T06:57:25.3323962Z",
+  "data": {
+    "id": 85001,
+    "targetId": 3015,
+    "targetType": "Application",
+    "programId": 28002
+  }
+}

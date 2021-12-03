@@ -1,0 +1,10 @@
+{
+  "eventId": "81847ae5-0e46-4372-91f8-1457eb549731",
+  "eventType": "SessionDeleted",
+  "eventDate": "2021-12-01T06:43:18.5750986Z",
+  "data": {
+    "deletedSessionId": 93002,
+    "sessionId": 37002,
+    "programId": 28005
+  }
+}

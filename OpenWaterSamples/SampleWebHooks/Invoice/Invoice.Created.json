@@ -1,0 +1,51 @@
+{
+    "eventId": "10594191-6980-4134-b799-f411b1557152",
+    "eventType": "InvoiceCreated",
+    "eventDate": "2021-12-01T07:08:51.4796032Z",
+    "data": {
+      "id": 9011,
+      "programId": 28002,
+      "programCode": null,
+      "roundId": 54004,
+      "userId": 16002,
+      "email": "submitter1@nonprofitcms.org",
+      "thirdPartyCorporateId": null,
+      "externalAccountData": null,
+      "couponName": "Rules to Apply to Cart when No Coupon Code is Entered",
+      "couponCode": "No Coupon",
+      "createdAtUtc": "2021-12-01T07:08:49.7406061",
+      "mostRecentTransactionDateUtc": "2021-12-01T07:08:49.7916039",
+      "billingLineItems": [
+        {
+          "id": 8011,
+          "applicationId": 3027,
+          "deletedApplicationId": null,
+          "amount": 50,
+          "notes": null,
+          "details": "Base $50 price rule - no condition",
+          "targetType": "Submission",
+          "isVat": false,
+          "isManualAdjustment": false
+        }
+      ],
+      "payments": [
+        {
+          "id": 14011,
+          "amount": 10,
+          "isManualAdjustment": false,
+          "isPromissoryNote": false,
+          "canRefund": true,
+          "externalPaymentTransactionData": "random",
+          "billingName": "Admin Admin",
+          "referenceNumber": "108002",
+          "notes": "Notes",
+          "method": "CreditCard",
+          "details": "Paid with Visa ending in 1111. Response from Processor: random"
+        }
+      ],
+      "refunds": [],
+      "totalBilled": 50,
+      "totalPaid": 10,
+      "totalRefunded": 0
+    }
+  }

@@ -1,0 +1,16 @@
+{
+  "eventId": "af23ba2d-49ec-4bbc-9e64-ff1e9a19b174",
+  "eventType": "JudgeAssignedToApplication",
+  "eventDate": "2021-12-01T06:51:58.137239Z",
+  "data": {
+    "roundId": 54004,
+    "applicationId": 3015,
+    "programId": 28002,
+    "judgeUser": {
+      "id": 16007,
+      "email": "judge3@nonprofitcms.org",
+      "thirdPartyCorporateId": null,
+      "externalAccountData": null
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+    "eventId": "8132120a-cd42-472c-8b3f-e60f508259a2",
+    "eventType": "ApplicationCreated",
+    "eventDate": "2021-12-01T05:48:27.696256Z",
+    "data": {
+      "id": 3026,
+      "programId": 28002,
+      "userId": 16002,
+      "email": "submitter1@nonprofitcms.org",
+      "thirdPartyUniqueId": null,
+      "externalAccountData": null,
+      "sessionId": null,
+      "name": null,
+      "code": "3026",
+      "categoryCode": null,
+      "categoryName": null,
+      "categoryPath": null,
+      "downloadPdfAsApplicantUrl": "http://www.example.com",
+      "downloadPdfAsJudgeUrl": "http://www.example.com",
+      "scheduler": null,
+      "collaborators": [],
+      "roundSubmissions": [
+        {
+          "roundId": 54004,
+          "roundName": "First Round",
+          "startedAtUtc": "2021-12-01T05:48:27.6477986",
+          "updatedAtUtc": "2021-12-01T05:48:27.6427967",
+          "finalizedAtUtc": null,
+          "status": "Incomplete",
+          "allowUserToMakeEdits": false,
+          "invoiceId": null,
+          "isPaid": false,
+          "isWinner": false,
+          "isForwarded": false,
+          "winnerNotes": null,
+          "adminUrlToSubmission": "http://www.example.com",
+          "publicUrlToSubmission": "http://www.example.com",
+          "publicGalleryUrl": "http://www.example.com",
+          "winnerTypes": [],
+          "submissionFieldValues": [
+            {
+              "firstValue": null,
+              "secondValue": null,
+              "alias": "title",
+              "typeName": "ApplicationNameFieldValue"
+            },
+            {
+              "selectedPath": [],
+              "alias": "category",
+              "typeName": "ApplicationCategoryFieldValue"
+            },
+            {
+              "value": null,
+              "alias": "narrative",
+              "typeName": "TextFieldValue"
+            }
+          ],
+          "judgeScorecardInfos": [],
+          "numberOfTimesJudged": 0,
+          "numberOfAssignedJudges": 0,
+          "averageScore": null
+        }
+      ]
+    }
+  }

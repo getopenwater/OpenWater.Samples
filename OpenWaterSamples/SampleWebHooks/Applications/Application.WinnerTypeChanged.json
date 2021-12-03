@@ -1,0 +1,12 @@
+{
+  "eventId": "412f7ad3-1fdf-427c-b7a5-2e557334a781",
+  "eventType": "ApplicationWinnerTypeChanged",
+  "eventDate": "2021-12-01T05:49:56.3578024Z",
+  "data": {
+    "id": 3026,
+    "programId": 28002,
+    "winnerTypes": [
+      "Gold"
+    ]
+  }
+}

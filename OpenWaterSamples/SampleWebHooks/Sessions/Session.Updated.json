@@ -1,0 +1,49 @@
+{
+  "eventId": "77def776-f82c-40a4-85c8-c09e96eb22cb",
+  "eventType": "SessionUpdated",
+  "eventDate": "2021-12-01T06:38:53.1637619Z",
+  "data": {
+    "id": 37002,
+    "programId": 28005,
+    "typeId": 40010,
+    "typeName": "Poster",
+    "name": "New Title",
+    "chairs": [
+      {
+        "id": 38002,
+        "email": "judge1@nonprofitcms.org",
+        "isPrimary": false
+      }
+    ],
+    "items": [
+      {
+        "id": 36003,
+        "applicationId": 3020,
+        "customSessionItemTypeId": null,
+        "customSessionItemTypeDescription": null,
+        "sortOrder": 0,
+        "durationInMinutes": null
+      },
+      {
+        "id": 36004,
+        "applicationId": null,
+        "customSessionItemTypeId": 35001,
+        "customSessionItemTypeDescription": "Description",
+        "sortOrder": 1,
+        "durationInMinutes": null
+      }
+    ],
+    "fieldValues": [
+      {
+        "value": "New Title",
+        "alias": "title",
+        "typeName": "SessionNameFieldValue"
+      },
+      {
+        "selectedTypeId": 40010,
+        "alias": "type",
+        "typeName": "SessionTypeFieldValue"
+      }
+    ]
+  }
+}

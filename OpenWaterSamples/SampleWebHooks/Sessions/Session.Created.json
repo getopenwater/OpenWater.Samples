@@ -1,0 +1,26 @@
+{
+    "eventId": "083c8d2d-9af9-4939-be41-3389c2c47d42",
+    "eventType": "SessionCreated",
+    "eventDate": "2021-12-01T06:29:10.2108195Z",
+    "data": {
+      "id": 37002,
+      "programId": 28005,
+      "typeId": 40010,
+      "typeName": "Poster",
+      "name": "Title",
+      "chairs": [],
+      "items": [],
+      "fieldValues": [
+        {
+          "value": "Title",
+          "alias": "title",
+          "typeName": "SessionNameFieldValue"
+        },
+        {
+          "selectedTypeId": 40010,
+          "alias": "type",
+          "typeName": "SessionTypeFieldValue"
+        }
+      ]
+    }
+  }

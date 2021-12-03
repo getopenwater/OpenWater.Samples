@@ -1,0 +1,10 @@
+{
+  "eventId": "59109961-8ab1-4f97-92c1-e36a8fcf92ac",
+  "eventType": "ApplicationDeleted",
+  "eventDate": "2021-12-01T06:17:30.8393943Z",
+  "data": {
+    "deletedApplicationId": 92001,
+    "applicationId": 3026,
+    "programId": 28002
+  }
+}
