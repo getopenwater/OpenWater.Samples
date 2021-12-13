@@ -1,15 +1,20 @@
 {
-    "eventId": "983355c8-547a-4ba9-835d-bf0fa0b791c3",
-    "eventType": "ItemAssignedToScheduler",
-    "eventDate": "2021-12-01T06:56:41.9911379Z",
-    "data": {
-      "id": 85001,
-      "programId": 28002,
-      "targetId": 3015,
-      "targetName": "Application 3015",
-      "targetType": "Application",
-      "scheduleRoomId": 66001,
-      "scheduleDayId": 64002,
-      "scheduleTimeSlotId": 65002
-    }
+  "eventId": "992f6f65-a5e0-4d69-bec1-e3018f656f20",
+  "eventType": "ItemAssignedToScheduler",
+  "eventDate": "2021-12-08T06:10:02.7748286Z",
+  "data": {
+    "id": 85001,
+    "programId": 28002,
+    "targetId": 3015,
+    "targetName": "Application 3015",
+    "targetType": "Application",
+    "scheduleRoomId": 66001,
+    "scheduleRoomName": "Room-1",
+    "scheduleDayId": 64002,
+    "scheduleDayDate": "2021-12-08T00:00:00",
+    "scheduleTimeSlotId": 65002,
+    "scheduleTimeSlotName": "TimeSlot-1",
+    "startTime": "08:00:00",
+    "endTime": "10:00:00"
   }
+}
