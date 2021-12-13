@@ -1,12 +1,19 @@
 {
-  "eventId": "7b16af45-495a-4848-a2ca-7a903e8e7cb6",
+  "eventId": "e1329b62-7f06-4c15-8f2b-4100c3b10b39",
   "eventType": "JudgeCompletedEvaluation",
-  "eventDate": "2021-12-01T06:53:02.0902461Z",
+  "eventDate": "2021-12-08T06:06:26.0180516Z",
   "data": {
-    "roundId": 54001,
-    "applicationId": 3003,
-    "programId": 28001,
+    "roundId": 54004,
+    "applicationId": 3015,
+    "programId": 28002,
+    "programName": "SingleOrg Program",
     "totalScore": 2,
+    "applicationName": "Application 3015",
+    "applicationCategory": {
+      "code": "cat3",
+      "name": "cat3",
+      "path": "4023"
+    },
     "judgeUser": {
       "id": 16007,
       "email": "judge3@nonprofitcms.org",
