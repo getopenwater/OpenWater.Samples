@@ -1,10 +1,11 @@
 {
-  "eventId": "99937ab8-7fb1-48fd-b731-2af2da23658d",
+  "eventId": "fd6e7621-4ed2-47bf-b949-7e22efde3fe8",
   "eventType": "JudgeUnassignedFromRound",
-  "eventDate": "2021-12-01T06:45:27.4397955Z",
+  "eventDate": "2021-12-08T06:07:13.3182988Z",
   "data": {
     "roundId": 54004,
     "programId": 28002,
+    "programName": "SingleOrg Program",
     "judgeUser": {
       "id": 16007,
       "email": "judge3@nonprofitcms.org",
