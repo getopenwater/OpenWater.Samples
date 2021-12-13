@@ -1,15 +1,16 @@
 {
-    "eventId": "e5256d6e-3e28-4c26-a579-6587a3ce4a94",
-    "eventType": "JudgeAssignedToRound",
-    "eventDate": "2021-12-01T06:45:54.0280599Z",
-    "data": {
-      "roundId": 54004,
-      "programId": 28002,
-      "judgeUser": {
-        "id": 16007,
-        "email": "judge3@nonprofitcms.org",
-        "thirdPartyCorporateId": null,
-        "externalAccountData": null
-      }
+  "eventId": "d740c0fb-cd19-4877-9085-abd4d3797b4b",
+  "eventType": "JudgeAssignedToRound",
+  "eventDate": "2021-12-08T06:07:16.4369855Z",
+  "data": {
+    "roundId": 54004,
+    "programId": 28002,
+    "programName": "SingleOrg Program",
+    "judgeUser": {
+      "id": 16007,
+      "email": "judge3@nonprofitcms.org",
+      "thirdPartyCorporateId": null,
+      "externalAccountData": null
     }
   }
+}
