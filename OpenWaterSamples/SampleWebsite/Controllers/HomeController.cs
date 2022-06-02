@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace SampleWebsite.Controllers
 {
+    /// <summary>
+    /// This is a sample login page.  There is no need to update this site as it simulates a login page.
+    /// </summary>
     public class HomeController : Controller
     {
         private const string ERROR_MESSAGE_KEY = "ErrorMessage";
@@ -30,7 +33,7 @@ namespace SampleWebsite.Controllers
             {
                 if (!string.IsNullOrEmpty(callback))
                 {
-                    var redirectUrl = GenerateTokenAdnGetRedirectUrl(callback, user);
+                    var redirectUrl = GenerateTokenAndRedirect(callback, user);
                     return Redirect(redirectUrl);
                 }
                 else
@@ -62,12 +65,12 @@ namespace SampleWebsite.Controllers
                 {
                     return RedirectToAction("index");
                 }
-                var redirectUrl = GenerateTokenAdnGetRedirectUrl(callback, user);
+                var redirectUrl = GenerateTokenAndRedirect(callback, user);
                 return Redirect(redirectUrl);
             }
         }
 
-        private string GenerateTokenAdnGetRedirectUrl(string callback, User user)
+        private string GenerateTokenAndRedirect(string callback, User user)
         {
             UserTokensService tokensService = new UserTokensService();
             var token = tokensService.AddNewUserToken(user);
