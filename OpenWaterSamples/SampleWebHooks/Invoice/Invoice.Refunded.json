@@ -1,0 +1,52 @@
+{
+	"eventId": "4e2de81d-8ff6-447a-a7e4-8bc742f98807",
+	"eventType": "InvoiceRefunded",
+	"eventDate": "2022-07-28T16:16:56.5082443Z",
+	"data": {
+		"id": 6,
+		"programId": 23,
+		"programCode": null,
+		"roundId": 35,
+		"userId": 1,
+		"email": "noreply@secure-platform.com",
+		"thirdPartyCorporateId": null,
+		"externalAccountData": null,
+		"couponName": "Rules to Apply to Cart when No Coupon Code is Entered",
+		"couponCode": "No Coupon",
+		"createdAtUtc": "2022-07-28T16:16:11.101034",
+		"mostRecentTransactionDateUtc": "2022-07-28T16:16:56.1644889",
+		"billingLineItems": [{
+			"id": 8,
+			"applicationId": 104,
+			"deletedApplicationId": null,
+			"amount": 10,
+			"notes": null,
+			"details": "Test",
+			"targetType": "Submission",
+			"isVat": false,
+			"isManualAdjustment": false
+		}],
+		"payments": [{
+			"id": 1,
+			"amount": 10,
+			"isManualAdjustment": false,
+			"isPromissoryNote": false,
+			"canRefund": false,
+			"externalPaymentTransactionData": null,
+			"billingName": null,
+			"referenceNumber": null,
+			"notes": null,
+			"method": "Check",
+			"details": ""
+		}],
+		"refunds": [{
+			"id": 1,
+			"amount": 10,
+			"notes": "This is the note spot",
+			"details": "[[[Processed Manually.]]]"
+		}],
+		"totalBilled": 10,
+		"totalPaid": 10,
+		"totalRefunded": 10
+	}
+}
