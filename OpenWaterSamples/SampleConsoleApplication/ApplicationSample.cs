@@ -28,8 +28,6 @@ public class ApplicationSample
         await _apiClient.FinalizeRoundSubmissionAsync(createdApplication.Id, roundId);
         await _apiClient.ChangeFinalizedRoundSubmissionStatusAsync(createdApplication.Id, roundId,
             new ChangeFinalizedRoundSubmissionStatusRequest { Status = OpenWater.ApiClient.Definitions.SubmissionStatus.Complete });
-        //await _apiClient.SetForwardingStatusForApplicationInRoundAsync(createdApplication.Id, roundId,
-        //new SetForwardingStatusForApplicationInRoundRequest { IsForwarded = true });
 
         return createdApplication;
     }
@@ -176,8 +174,6 @@ public class ApplicationSample
         };
 
         var selectedOptions = new List<ListValue>();
-        Random generator = new Random();
-
         var selectedOption = 3;
         selectedOptions.Add(new ListValue { Id = Guid.Parse(checkBoxField[selectedOption].Item1), Value = checkBoxField[selectedOption].Item2 });
 

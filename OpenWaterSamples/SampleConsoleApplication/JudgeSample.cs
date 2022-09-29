@@ -1,6 +1,7 @@
 ﻿using OpenWater.ApiClient;
+using OpenWater.ApiClient.Evaluation;
 using OpenWater.ApiClient.JudgeAssignment;
-using OpenWater.ApiClient.User;
+using Faker;
 
 namespace SampleConsoleApplication
 {
@@ -12,7 +13,7 @@ namespace SampleConsoleApplication
             _apiClient = apiClient;
         }
 
-        public async Task<DetailsResponse> CreateJudgeAsync(int roundId)
+        public async Task<OpenWater.ApiClient.User.DetailsResponse> CreateJudgeAsync(int roundId)
         {
             var createdUser = await CreateUserAsync();
             await MarkUserAsJudgeAsync(createdUser.Id, roundId);
@@ -30,10 +31,33 @@ namespace SampleConsoleApplication
             await _apiClient.AssignJudgeToApplicationAsync(assignJudgeToApplicationRequest);
         }
 
-
+        public async Task EvaluateApplicationAsync(int evaluationId)
+        {
+            var scoringAnswers = new List<GeneralScoringAnswerModel>
+            {
+                new GeneralScoringAnswerModel
+                {
+                    Alias = "comments",
+                    Score = Convert.ToDouble(NumberFaker.Number(1,5)),
+                    Text = "This applicant performed well",
+                },
+                new GeneralScoringAnswerModel
+                {
+                    Alias = "howWellDidThisApplicantPerform",
+                    Text = "Did a Great Job",
+                    Score = 2
+                }
+            };
+            var updateEvaluationFormRequest = new UpdateEvaluationFormRequest
+            {
+                GeneralScoringAnswers = scoringAnswers,
+                FinalizeScore = true
+            };
+            await _apiClient.UpdateEvaluationFormAsync(evaluationId, updateEvaluationFormRequest);
+        }
 
         #region Judge creation and assignment helper methods
-        private async Task<DetailsResponse> CreateUserAsync()
+        private async Task<OpenWater.ApiClient.User.DetailsResponse> CreateUserAsync()
         {
             var createUserRequest = Common.GenerateSampleUser(isApplicant: false);
             return await _apiClient.CreateUserAsync(createUserRequest);
