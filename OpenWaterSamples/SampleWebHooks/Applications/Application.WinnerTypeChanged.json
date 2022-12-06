@@ -1,12 +1,74 @@
 {
-  "eventId": "412f7ad3-1fdf-427c-b7a5-2e557334a781",
-  "eventType": "ApplicationWinnerTypeChanged",
-  "eventDate": "2021-12-01T05:49:56.3578024Z",
-  "data": {
-    "id": 3026,
-    "programId": 28002,
-    "winnerTypes": [
-      "Gold"
-    ]
-  }
+       "eventId": "f7240cb5-991b-48c5-97e5-ff2c098d76c9",
+        "eventType": "ApplicationWinnerTypeChanged",
+       "eventDate": "2022-12-06T13:54:15.7152988",
+       "data": {
+         "winnerTypes": ["Eligible"],
+                "id": 112,
+         "programId": 23,
+            "userId": 41,
+          "email": "brianmurphy@mailinator.com",
+               "thirdPartyUniqueId": "18052",
+            "externalAccountData": null,
+           "sessionId": null,
+            "name": "Brian Murphy",
+          "code": "112",
+               "categoryCode": "P",
+              "categoryName": "Pop",
+           "categoryPath": "73",
+         "publicDownloadPdfAsApplicantUrl": "https://training-jackson.secure-platform.com/site/organizations/main/printapplicationpdf/applicationforapplicant/112?roundId=35",
+               "downloadPdfAsApplicantUrl": "https://training-jackson.secure-platform.com/admin/organizations/main/solicitations/23/downloadapplicationpdf/redirecttoapplicationforapplicantpdfurl/112?licenseKey=57040944-120e-4635-bf94-013403d57f99&roundId=35",
+              "downloadPdfAsJudgeUrl": "https://training-jackson.secure-platform.com/admin/organizations/main/solicitations/23/downloadapplicationpdf/redirecttoapplicationforjudgepdfurl/112?licenseKey=57040944-120e-4635-bf94-013403d57f99&roundId=35",
+             "scheduler": null,
+              "collaborators": [],
+             "roundSubmissions": [{
+                  "roundId": 35,
+                       "roundName": "Main",
+                      "startedAtUtc": "2022-09-13T20:20:49.8741684",
+                   "updatedAtUtc": "2022-11-17T17:14:57.6274597",
+                        "finalizedAtUtc": null,
+                    "status": "InCart",
+                    "allowUserToMakeEdits": false,
+                 "invoiceId": null,
+                  "isPaid": false,
+                     "isWinner": true,
+                       "isForwarded": false,
+                     "winnerNotes": null,
+                    "adminUrlToSubmission": "https://training-jackson.secure-platform.com/admin/organizations/main/solicitations/23/rounds/35/applicationjudgements/details/114",
+                  "publicUrlToSubmission": "https://training-jackson.secure-platform.com/site/organizations/main/submissions/details/114",
+                     "publicGalleryUrl": "https://training-jackson.secure-platform.com/site/gallery/rounds/35/details/114",
+                  "winnerTypes": ["Eligible"],
+                 "submissionFieldValues": [{
+                         "firstValue": "Brian Murphy",
+                         "secondValue": null,
+                                "alias": "title",
+                          "typeName": "ApplicationNameFieldValue"
+                      }, {
+                             "selectedPath": [73],
+                           "alias": "category",
+                          "typeName": "ApplicationCategoryFieldValue"
+                  }, {
+                         "value": null,
+                              "alias": "companySearch",
+                                "typeName": "TextFieldValue"
+                       }, {
+                              "value": null,
+                           "alias": "companyId",
+                         "typeName": "TextFieldValue"
+                        }, {
+                               "value": null,
+                            "alias": "companyId1",
+                         "typeName": "TextFieldValue"
+                        }, {
+                               "value": null,
+                            "alias": "companyMembership",
+                          "typeName": "TextFieldValue"
+                 }],
+                       "judgeScorecardInfos": [],
+                        "numberOfTimesJudged": 0,
+                  "numberOfAssignedJudges": 0,
+                 "averageScore": null
+                }],
+              "fundTransactionIds": []
+ }
 }
